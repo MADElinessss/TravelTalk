@@ -20,6 +20,11 @@
 		579DE4FC2B54162500E52CC3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 579DE4FB2B54162500E52CC3 /* Kingfisher */; };
 		579DE4FF2B541D2900E52CC3 /* TravelGroupTalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579DE4FD2B541D2900E52CC3 /* TravelGroupTalkTableViewCell.swift */; };
 		579DE5002B541D2900E52CC3 /* TravelGroupTalkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 579DE4FE2B541D2900E52CC3 /* TravelGroupTalkTableViewCell.xib */; };
+		579DE5022B5426CB00E52CC3 /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579DE5012B5426CB00E52CC3 /* ChattingViewController.swift */; };
+		579DE5052B54280200E52CC3 /* ChattingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579DE5032B54280200E52CC3 /* ChattingTableViewCell.swift */; };
+		579DE5062B54280200E52CC3 /* ChattingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 579DE5042B54280200E52CC3 /* ChattingTableViewCell.xib */; };
+		579DE5092B542D2C00E52CC3 /* MyChattingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579DE5072B542D2C00E52CC3 /* MyChattingTableViewCell.swift */; };
+		579DE50A2B542D2C00E52CC3 /* MyChattingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 579DE5082B542D2C00E52CC3 /* MyChattingTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,11 @@
 		579DE4F72B540A1500E52CC3 /* TravelTalkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelTalkTableViewCell.xib; sourceTree = "<group>"; };
 		579DE4FD2B541D2900E52CC3 /* TravelGroupTalkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelGroupTalkTableViewCell.swift; sourceTree = "<group>"; };
 		579DE4FE2B541D2900E52CC3 /* TravelGroupTalkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelGroupTalkTableViewCell.xib; sourceTree = "<group>"; };
+		579DE5012B5426CB00E52CC3 /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
+		579DE5032B54280200E52CC3 /* ChattingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingTableViewCell.swift; sourceTree = "<group>"; };
+		579DE5042B54280200E52CC3 /* ChattingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChattingTableViewCell.xib; sourceTree = "<group>"; };
+		579DE5072B542D2C00E52CC3 /* MyChattingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChattingTableViewCell.swift; sourceTree = "<group>"; };
+		579DE5082B542D2C00E52CC3 /* MyChattingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyChattingTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,11 @@
 		579DE4F42B5409F500E52CC3 /* ChattingView */ = {
 			isa = PBXGroup;
 			children = (
+				579DE5012B5426CB00E52CC3 /* ChattingViewController.swift */,
+				579DE5032B54280200E52CC3 /* ChattingTableViewCell.swift */,
+				579DE5042B54280200E52CC3 /* ChattingTableViewCell.xib */,
+				579DE5072B542D2C00E52CC3 /* MyChattingTableViewCell.swift */,
+				579DE5082B542D2C00E52CC3 /* MyChattingTableViewCell.xib */,
 			);
 			path = ChattingView;
 			sourceTree = "<group>";
@@ -176,9 +191,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				579DE4E82B5405C300E52CC3 /* LaunchScreen.storyboard in Resources */,
+				579DE5062B54280200E52CC3 /* ChattingTableViewCell.xib in Resources */,
 				579DE5002B541D2900E52CC3 /* TravelGroupTalkTableViewCell.xib in Resources */,
 				579DE4F92B540A1500E52CC3 /* TravelTalkTableViewCell.xib in Resources */,
 				579DE4E52B5405C300E52CC3 /* Assets.xcassets in Resources */,
+				579DE50A2B542D2C00E52CC3 /* MyChattingTableViewCell.xib in Resources */,
 				579DE4E32B5405C100E52CC3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,7 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579DE5022B5426CB00E52CC3 /* ChattingViewController.swift in Sources */,
 				579DE4E02B5405C100E52CC3 /* ViewController.swift in Sources */,
+				579DE5052B54280200E52CC3 /* ChattingTableViewCell.swift in Sources */,
+				579DE5092B542D2C00E52CC3 /* MyChattingTableViewCell.swift in Sources */,
 				579DE4F02B54061B00E52CC3 /* ChattingData.swift in Sources */,
 				579DE4F22B5408A700E52CC3 /* TravelTalkViewController.swift in Sources */,
 				579DE4DC2B5405C100E52CC3 /* AppDelegate.swift in Sources */,

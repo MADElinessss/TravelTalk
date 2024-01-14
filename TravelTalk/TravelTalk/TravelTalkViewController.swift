@@ -5,7 +5,6 @@
 //  Created by 신정연 on 1/14/24.
 //
 
-import Kingfisher
 import UIKit
 
 class TravelTalkViewController: UIViewController {
@@ -66,5 +65,10 @@ extension TravelTalkViewController: UITableViewDelegate, UITableViewDataSource {
         
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewController = storyboard?.instantiateViewController(withIdentifier: "ChattingViewController") as! ChattingViewController
+        viewController.chatroomId = indexPath.row
+        tableView.reloadRows(at: [indexPath], with: .fade)
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }
