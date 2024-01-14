@@ -17,6 +17,11 @@ class MyChattingTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        contentLabel.layer.borderWidth = 1.0
+        contentLabel.layer.borderColor = UIColor.lightGray.cgColor
+        contentLabel.layer.cornerRadius = 5
+        contentLabel.backgroundColor = .systemGray5
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -38,8 +38,21 @@ extension TravelTalkViewController: UITableViewDelegate, UITableViewDataSource {
             
             cell.profileNameLabel.text = mockChatList[indexPath.row].chatroomName
             cell.contentLabel.text = mockChatList[indexPath.row].chatList.last?.message
-            cell.dateLabel.text = mockChatList[indexPath.row].chatList.last?.date
-            
+            let originalFormatter = DateFormatter()
+            originalFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+            originalFormatter.locale = Locale(identifier: "en_US_POSIX")
+
+            let displayFormatter = DateFormatter()
+            displayFormatter.dateFormat = "yy.MM.dd"
+            displayFormatter.locale = Locale(identifier: "ko_KR")
+
+            if let lastMessageDate = mockChatList[indexPath.row].chatList.last?.date,
+               let date = originalFormatter.date(from: lastMessageDate) {
+                cell.dateLabel.text = displayFormatter.string(from: date)
+            } else {
+                cell.dateLabel.text = "날짜 오류"
+            }
+
             cell.profileImageView.image = UIImage(named: mockChatList[indexPath.row].chatroomImage[0])
             cell.profileImageView.layer.cornerRadius = 15
             
@@ -49,8 +62,21 @@ extension TravelTalkViewController: UITableViewDelegate, UITableViewDataSource {
             
             cell.profileLabel.text = mockChatList[indexPath.row].chatroomName
             cell.contentLabel.text = mockChatList[indexPath.row].chatList.last?.message
-            cell.dateLabel.text = mockChatList[indexPath.row].chatList.last?.date
-            
+            let originalFormatter = DateFormatter()
+            originalFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+            originalFormatter.locale = Locale(identifier: "en_US_POSIX")
+
+            let displayFormatter = DateFormatter()
+            displayFormatter.dateFormat = "yy.MM.dd"
+            displayFormatter.locale = Locale(identifier: "ko_KR")
+
+            if let lastMessageDate = mockChatList[indexPath.row].chatList.last?.date,
+               let date = originalFormatter.date(from: lastMessageDate) {
+                cell.dateLabel.text = displayFormatter.string(from: date)
+            } else {
+                cell.dateLabel.text = "날짜 오류"
+            }
+
             cell.profileImage1.image = UIImage(named: mockChatList[indexPath.row].chatroomImage[0])
             cell.profileImage1.layer.cornerRadius = 15
             cell.profileImage2.image = UIImage(named: mockChatList[indexPath.row].chatroomImage[1])

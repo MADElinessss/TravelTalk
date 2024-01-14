@@ -18,23 +18,28 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vip-LY-ORj">
-                        <rect key="frame" x="272" y="16" width="36" height="17"/>
+                        <rect key="frame" x="272" y="16" width="36" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="A3d-it-soF"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAT-Ov-0Am">
-                        <rect key="frame" x="233" y="21" width="27" height="12"/>
+                        <rect key="frame" x="233" y="54" width="27" height="12"/>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <color key="textColor" systemColor="systemGrayColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="KAT-Ov-0Am" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="100" id="A3P-3b-wlP"/>
                     <constraint firstItem="vip-LY-ORj" firstAttribute="leading" secondItem="KAT-Ov-0Am" secondAttribute="trailing" constant="12" id="Mul-WA-6Wd"/>
                     <constraint firstItem="vip-LY-ORj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="aIC-Ln-Pov"/>
                     <constraint firstItem="KAT-Ov-0Am" firstAttribute="bottom" secondItem="vip-LY-ORj" secondAttribute="bottom" id="mWg-Hx-o2Z"/>
                     <constraint firstAttribute="trailing" secondItem="vip-LY-ORj" secondAttribute="trailing" constant="12" id="pVH-iW-09J"/>
+                    <constraint firstAttribute="bottom" secondItem="vip-LY-ORj" secondAttribute="bottom" constant="16" id="vTo-uR-Glm"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
